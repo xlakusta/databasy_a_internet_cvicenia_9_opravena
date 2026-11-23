@@ -1,0 +1,19 @@
+{
+  "name": "nv",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xlakusta/databasy_a_internet_cvicenia_9_opravena.git"
+  },
+  "keywords": [],
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/xlakusta/databasy_a_internet_cvicenia_9_opravena/issues"
+  },
+  "homepage": "https://github.com/xlakusta/databasy_a_internet_cvicenia_9_opravena#readme"
+}
