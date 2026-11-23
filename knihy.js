@@ -7,7 +7,6 @@ function ukazChybu(text) {
     if (chyba) chyba.textContent = text || "";
 }
 
-<<<<<<< HEAD
 const stavPrihlasenia = document.getElementById("stavPrihlasenia");
 
 function zobrazPrihlaseneho() {
@@ -50,8 +49,6 @@ zobrazPrihlaseneho();
 
 
 
-=======
->>>>>>> 253f8137faede680710e0c0a9a6bfda5b4a91c1d
 function ukazSpravu(text) {
     if (sprava) sprava.textContent = text || "";
 }
@@ -64,16 +61,12 @@ async function textChyby(odpoved) {
 async function nacitajKnihy() {
     ukazChybu("");
     try {
-<<<<<<< HEAD
         const params = new URLSearchParams({
             hladat: document.getElementById("hladatInput").value,
             zoradit: document.getElementById("zoraditSelect").value,
             smer: document.getElementById("smerSelect").value
         });
         const odpoved = await fetch("/api/knihy?" + params.toString());
-=======
-        const odpoved = await fetch("/api/knihy");
->>>>>>> 253f8137faede680710e0c0a9a6bfda5b4a91c1d
         if (!odpoved.ok) throw new Error(await textChyby(odpoved));
         const knihy = await odpoved.json();
 
@@ -231,7 +224,6 @@ formular.addEventListener("submit", async (event) => {
     }
 });
 
-<<<<<<< HEAD
 // Reakcia na zmenu filtra a zoradenia
 document.getElementById("hladatInput").addEventListener("input", nacitajKnihy);
 document.getElementById("zoraditSelect").addEventListener("change", nacitajKnihy);
@@ -244,6 +236,3 @@ document.getElementById("resetFilterBtn").addEventListener("click", () => {
 });
 
 nacitajKnihy();
-=======
-nacitajKnihy();
->>>>>>> 253f8137faede680710e0c0a9a6bfda5b4a91c1d

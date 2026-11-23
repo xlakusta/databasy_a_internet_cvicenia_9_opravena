@@ -3,11 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Хост: 127.0.0.1
-<<<<<<< HEAD
 -- Час створення: Лис 23 2026 р., 11:00
-=======
--- Час створення: Лис 18 2026 р., 15:59
->>>>>>> 253f8137faede680710e0c0a9a6bfda5b4a91c1d
 -- Версія сервера: 10.4.32-MariaDB
 -- Версія PHP: 8.2.12
 
@@ -22,11 +18,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
-<<<<<<< HEAD
 -- База даних: ` kniznica_db`
-=======
--- База даних: `kniznica_db`
->>>>>>> 253f8137faede680710e0c0a9a6bfda5b4a91c1d
 --
 
 -- --------------------------------------------------------
@@ -54,7 +46,6 @@ INSERT INTO `knihy` (`id`, `nazov`, `autor`, `rok`, `cena`) VALUES
 (7, 'The Call of the Wild', 'Jack London', 1903, 7.21),
 (8, 'Verity', 'Colleen Hoover', 2020, 100.00);
 
-<<<<<<< HEAD
 -- --------------------------------------------------------
 
 --
@@ -76,8 +67,6 @@ CREATE TABLE `pouzivatelia` (
 INSERT INTO `pouzivatelia` (`id`, `meno`, `email`, `heslo_hash`, `vytvoreny`) VALUES
 (3, 'vlad', 'dddd@gmail.com', '$2b$10$OyBVPKaw2UchsdLruFmYo.YlyZ422vnkzWs7ICmWRQwO4y7BHbZ/2', '2026-11-23 09:51:34');
 
-=======
->>>>>>> 253f8137faede680710e0c0a9a6bfda5b4a91c1d
 --
 -- Індекси збережених таблиць
 --
@@ -89,7 +78,6 @@ ALTER TABLE `knihy`
   ADD PRIMARY KEY (`id`);
 
 --
-<<<<<<< HEAD
 -- Індекси таблиці `pouzivatelia`
 --
 ALTER TABLE `pouzivatelia`
@@ -97,8 +85,6 @@ ALTER TABLE `pouzivatelia`
   ADD UNIQUE KEY `email` (`email`);
 
 --
-=======
->>>>>>> 253f8137faede680710e0c0a9a6bfda5b4a91c1d
 -- AUTO_INCREMENT для збережених таблиць
 --
 
@@ -107,15 +93,12 @@ ALTER TABLE `pouzivatelia`
 --
 ALTER TABLE `knihy`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
-<<<<<<< HEAD
 
 --
 -- AUTO_INCREMENT для таблиці `pouzivatelia`
 --
 ALTER TABLE `pouzivatelia`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
-=======
->>>>>>> 253f8137faede680710e0c0a9a6bfda5b4a91c1d
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
